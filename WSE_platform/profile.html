@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        background: #f1f5f9;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2><a href="dashboard.html"><  Dashboard</a></h2>
+    </div>
+
+    <div class="main">
+
+        <div class="profile-box">
+            <h2>My Profile</h2>
+
+            <!-- Profile Image -->
+            <div class="profile-img">
+                <label for="imageUpload">
+                    <img id="profilePic" src="https://via.placeholder.com/100">
+                </label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+
+            <div class="field">
+                <span>Name</span>
+                <input id="name" disabled>
+            </div>
+
+            <div class="field">
+                <span>Email</span>
+                <input id="email" disabled>
+            </div>
+
+            <div class="field">
+                <span>Phone</span>
+                <input id="phone" disabled>
+            </div>
+
+            <!-- Address instead of contacts -->
+            <div class="field">
+                <span>Address</span>
+                <input id="address" disabled>
+            </div>
+
+            <button id="editBtn" onclick="toggleEdit()">Edit</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
