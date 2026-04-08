@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women Safety & Emergency Platform - Project Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🚨 Women Safety & Emergency Platform</h1>
+            <p class="subtitle">Project Report</p>
+        </header>
+
+        <section class="fade-in">
+            <h2>1. Abstract</h2>
+            <p>
+                The Women Safety & Emergency Platform is a web-based application designed to provide immediate assistance 
+                during emergency situations. It enables users to trigger SOS alerts, share their live location, and access 
+                emergency contacts quickly. The system maintains alert history and allows profile management.
+            </p>
+        </section>
+
+        <section class="fade-in">
+            <h2>2. Introduction</h2>
+            <p>
+                In today’s world, women's safety has become a major concern. This project provides a digital solution that 
+                allows users to send emergency alerts, track location, and access help instantly.
+            </p>
+        </section>
+
+        <section class="fade-in">
+            <h2>3. Problem Statement</h2>
+            <ul>
+                <li>Manual emergency dialing takes time</li>
+                <li>No real-time tracking in traditional systems</li>
+                <li>Lack of centralized alert system</li>
+            </ul>
+        </section>
+
+        <section class="fade-in">
+            <h2>4. Objectives</h2>
+            <ul>
+                <li>One-click SOS alert system</li>
+                <li>Live location sharing</li>
+                <li>Alert history tracking</li>
+                <li>User profile management</li>
+                <li>Admin dashboard</li>
+                <li>Mobile responsive design</li>
+            </ul>
+        </section>
+
+        <section class="fade-in">
+            <h2>5. Technologies Used</h2>
+            <table>
+                <tr>
+                    <th>Technology</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Structure</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Styling</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Logic & Functionality</td>
+                </tr>
+                <tr>
+                    <td>LocalStorage</td>
+                    <td>Data Storage</td>
+                </tr>
+                <tr>
+                    <td>Geolocation API</td>
+                    <td>Location Tracking</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="fade-in">
+            <h2>6. System Architecture</h2>
+            <p>User → Browser → JavaScript → LocalStorage → Geolocation API</p>
+        </section>
+
+        <section class="fade-in">
+            <h2>7. Modules</h2>
+
+            <h3>7.1 Authentication</h3>
+            <p>User login & registration using LocalStorage.</p>
+
+            <h3>7.2 SOS Module</h3>
+            <p>Fetches user location using Geolocation API and triggers alerts.</p>
+
+            <h3>7.3 Alert History</h3>
+            <p>Stores previous alerts with timestamp.</p>
+
+            <h3>7.4 Profile Management</h3>
+            <p>Edit user details and upload profile image.</p>
+
+            <h3>7.5 Admin Panel</h3>
+            <p>Displays all users in a table format.</p>
+
+            <h3>7.6 Emergency Contacts</h3>
+            <p>Quick access to Police (100), Ambulance (102), Fire (101), Helpline (112).</p>
+
+        </section>
+
+        <section class="fade-in">
+            <h2>8. Working</h2>
+            <ol>
+                <li>User registers/logs in</li>
+                <li>Dashboard loads user data</li>
+                <li>User clicks SOS</li>
+                <li>Location fetched</li>
+                <li>Alert stored and displayed</li>
+            </ol>
+        </section>
+
+        <section class="fade-in">
+            <h2>9. UI/UX Features</h2>
+            <ul>
+                <li>Responsive design</li>
+                <li>Smooth animations</li>
+                <li>Modern UI</li>
+            </ul>
+        </section>
+
+        <!-- SCREENSHOTS -->
+    <section class="fade-in">
+        <h2>7. Screenshots</h2>
+
+        <div class="screenshots">
+            <div>
+                <img src="login.png" alt="Login Page">
+                <p>Login Page</p>
+            </div>  
+
+            <div>
+                <img src="dashboard.png" alt="Dashboard">
+                <p>Dashboard</p>
+            </div>
+
+            <div>
+                <img src="sos.png" alt="SOS Alert">
+                <p>SOS Alert</p>
+            </div>
+
+            <div>
+                <img src="profile.png" alt="Profile Page">
+                <p>Profile Page</p>
+            </div>
+            <div>
+                <img src="contact.png" alt="Contact Page">
+                <p>Profile Page</p>
+            </div>
+        </div>
+    </section>
+
+        <section class="fade-in">
+            <h2>10. Advantages</h2>
+            <ul>
+                <li>Easy to use</li>
+                <li>Fast emergency response</li>
+                <li>No server required</li>
+            </ul>
+        </section>
+
+        <section class="fade-in">
+            <h2>11. Limitations</h2>
+            <ul>
+                <li>No backend</li>
+                <li>Not real-time alerts</li>
+                <li>Basic security</li>
+            </ul>
+        </section>
+
+        <section class="fade-in">
+            <h2>12. Future Scope</h2>
+            <ul>
+                <li>Firebase integration</li>
+                <li>Real-time alerts</li>
+                <li>SMS API integration</li>
+                <li>Google Maps tracking</li>
+            </ul>
+        </section>
+
+        <section class="fade-in">
+            <h2>13. Conclusion</h2>
+            <p>
+                This project demonstrates how web technologies can help build a safety system for women. 
+                With further improvements, it can be developed into a real-world solution.
+            </p>
+        </section>
+
+        <footer class="fade-in">
+            <p>© 2026 Women Safety And Emergency Project</p>
+        </footer>
+
+    </div>
+
+    <script>
+const sections = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+</script>
+
+</body>
+</html>
