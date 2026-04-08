@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div id="top-container">
+            <nav id="nav-container">
+                <span>Dashboard</span>
+                <div class="menu-toggle" id="menu-toggle">
+    ☰
+</div>
+                <ul id="nav-menu">
+                    <li>
+                        <a href="admin.html">Admin</a>
+                    </li>
+                    <li>
+                        <a href="#sos-page">SOS</a>
+                    </li>
+                    <li>
+                        <a href="#history-page">alert</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="confirmLogout()">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <section class="section-hidden"> 
+        <div id="img-WS"></div>
+    </section>
+
+    <section id="sos-page" class="section-hidden">
+        <div>
+            <h2>SHARE EMERGENCY LOCATION</h2>
+
+            <P>
+                In case of danger or emergency, use the SOS button to instantly share your
+                live location with your trusted contacts and nearby support teams.
+                This feature ensures that help can reach you as quickly as possible.
+            </P>
+            <p>
+                Your location will be sent along with an alert message so that your family,
+                friends, or authorities can track and assist you in real-time.
+            </p>
+            <p><strong>⚠️ Use only in real emergencies.</strong></p>
+
+            <button onclick="goToSOS()">🚨 SOS</button>
+        </div>
+    </section>
+    
+    <section id="history-page" class="section-hidden">
+        
+        <h3>Alert History</h3>
+        
+        <p class="history-desc">
+            View all your past emergency alerts. This helps you track when and where alerts were triggered.
+        </p>
+        
+        <ul id="history">
+            <li class="empty">No alerts yet</li>
+        </ul>
+        <button onclick="clearHistory()">Clear History</button>
+        
+    </section>
+    <section id="incoming-alert" class="section-hidden">
+    <div id="new-div">
+        <p>sections for incoming alerts</p>
+    </div>
+        <div class="alert-card">
+            <h3>Incoming Alerts</h3>
+            <p>User: Riya</p>
+            <p>Location: XYZ</p>
+            <button onclick="acceptAlert()">Accept</button>
+            <button onclick="declineAlert()">Decline</button>
+        </div>
+
+    </section>
+
+    <section id="contact" class="section-hidden">
+        <div id="contact-container">
+            <div class="contact-box">
+                <h2>Emergency Contacts</h2>
+                <h3>📞 Emergency Helplines</h3>
+                <p>Police: Dial
+                    <button>
+                        <a href="tel:100">100</a>
+                    </button>
+                </p>
+                <p>Ambulance: Dial
+                    <button>
+                        <a href="tel:102">102</a>
+                    </button>
+                </p>
+                <p>Fire: Dial
+                    <button>
+                        <a href="tel:101">101</a>
+                    </button>
+                </p>
+                <p>Women Helpline: Dial
+                    <button>
+                        <a href="tel:1091">1091</a>
+                    </button>
+                </p>
+                <p>All-in-One: Dial
+                    <button>
+                        <a href="tel:112">112</a>
+                    </button>
+                </p>
+            </div>
+
+            <div class="contact-box">
+                <h3>🆘 Quick Action</h3>
+                <a href="tel:112">
+                    <button>Call Emergency 112</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+    <div class="footer-container">
+
+        
+        <!-- LEFT -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#sos-page">SOS</a></li>
+                <li><a href="#history-page">Alerts</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+        <!-- MIDDLE -->
+        <div class="footer-box">
+            <h3>🚨 Safety Dashboard</h3>
+            <p>
+                Your personal emergency support system. <br> 
+                Stay safe, stay connected, <br> and get help instantly when needed.
+            </p>
+        </div>
+        
+        <!-- RIGHT -->
+        <div class="footer-box">
+            <h3>Emergency</h3>
+            <p>🚓 Police: 100</p>
+            <p>🚑 Ambulance: 102</p>
+            <p>🔥 Fire: 101</p>
+            <p>📞 Helpline: 112</p>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Safety Dashboard | Built for Emergency Response</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

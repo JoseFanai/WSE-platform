@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hidden (before scroll) */
+.section-hidden {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Visible (after scroll) */
+.section-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Prevent navbar overlap */
+section {
+    scroll-margin-top: 80px;
+}
+
+body {
+    font-family: monospace;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/526/898/non_2x/women-protection-gradient-icon-for-dark-theme-protect-girls-against-violence-female-empowerment-women-safety-thin-line-color-symbol-modern-style-pictogram-isolated-outline-drawing-vector.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+form {
+    margin-top: 50px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Page */
+#login-body {
+    background-image: url(https://sflc.in/wp-content/uploads/2020/08/women-safety-in-digital-space.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+#login-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70vh;
+    padding-right: 70px;
+}
+
+#login-head {
+    font-size: 2.5rem;
+    display: inline-block;
+    padding: 20px;
+    color: thistle;
+}
+
+#loginForm {
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: inline-block;
+}
+
+#loginForm input {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 30px 0;
+    background: none;
+}
+
+#loginForm button {
+    border-radius: 10px;
+    font-size: 18px;
+    background-image: linear-gradient(to right, rgb(27, 66, 80), rgb(32, 59, 87), rgb(16, 66, 132));
+}
+
+#loginForm button:hover,
+#registerForm button:hover {
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(16, 132, 117), rgb(25, 109, 102), rgb(11, 80, 105));
+}
+
+#loginForm a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    background: blur(20px);
+}
+
+#loginForm a:hover,
+#registerForm a:hover {
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+/* Register Page */
+
+#loginForm,
+#registerForm {
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width: 300px;
+    min-height: 380px;
+}
+
+
+#loginForm input,
+#registerForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: none;
+    color: white;
+}
+
+#loginForm button,
+#registerForm button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, rgb(27, 66, 80), rgb(32, 59, 87), rgb(16, 66, 132));
+    border: none;
+    border-radius: 10px;
+}
+
+#loginForm a,
+#registerForm a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+/* dashboard */
+#top-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#nav-container {
+    background-color: rgba(0, 0, 0, 0.682);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    min-width: 100%;
+    min-height: 40px;
+    box-shadow: 0px 0px 10px #1e293b;
+    box-sizing: border-box;
+}
+
+#nav-container span {
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.71);
+    color: white;
+    padding-left: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#nav-container ul {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 30px;
+}
+
+#nav-container li {
+    font-size: 20px;
+    display: inline;
+    margin: 0px 8px 8px 0px;
+}
+
+#nav-container li a {
+    text-decoration: none;
+    color: white;
+}
+
+#img-WS {
+    height: 400px;
+    max-width: 100%;
+    background-size: cover;
+    background-image: url(https://womens-safety.com/wp-content/uploads/2024/07/Womens-Safety-logo-1.webp);
+    /* background-attachment: fixed; */
+    box-sizing: border-box;
+}
+
+/* sos */
+#sos-page {
+    /* height: 50vh; */
+    background-color: hsla(198, 43%, 24%, 0.677);
+    padding: 60px 20px;
+    margin: 0px;
+    min-height: 400px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#sos-page div {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#sos-page h2 {
+    padding: 20px;
+}
+
+#sos-page p {
+    line-height: 2.2;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+#sos-page button {
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #1e293b;
+}
+
+#sos-page button:hover {
+    box-shadow: 0px 0px 5px #efeeee;
+    background-color: rgba(255, 0, 0, 0.651);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#sos-main {
+    background-color: #052f42b4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#sosBtn {
+    /* background-image: radial-gradient(circle, rgb(121, 19, 80), rgb(255, 0, 0), rgb(255, 0, 200)); */
+    color: white;
+    font-size: 24px;
+    padding: 50px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgb(235, 24, 24);
+}
+
+#sosBtn:hover {
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    background-image: radial-gradient(circle, red, rgb(91, 9, 22), maroon);
+}
+
+/* alerts history */
+#history-page {
+    min-height: 40vh;
+    /* background-color: #052332; */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+#history-page h3 {
+    margin-bottom: 10px;
+}
+
+.history-desc {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+/* List */
+#history {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Each alert item */
+#history li {
+    background: #0f3a4a;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Empty state */
+.empty {
+    text-align: center;
+    background: transparent !important;
+    color: #94a3b8;
+}
+
+
+/* Profile */
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.sidebar a:hover {
+    text-shadow: 0px 0px 5px #ccc;
+    /* color: #7f9ecf; */
+}
+
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+.profile-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.profile-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-img input {
+    display: none;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.field span {
+    font-weight: bold;
+}
+
+.field input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    text-align: right;
+    width: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0ea5e9;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* incoming alert */
+#incoming-alert {
+    background-color: #1a262c8f;
+    min-height: 400px;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.alert-card {
+    box-sizing: border-box;
+    padding: 30px;
+    line-height: 2;
+    font-size: 20px;
+    background-color: #052332;
+    max-width: 300px;
+    min-height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+}
+
+#new-div {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* contact */
+#contact {
+    color: white;
+    min-height: 400px;
+    line-height: 2;
+    text-align: start;
+    background-image: url(https://media.istockphoto.com/id/1125844751/photo/telephone-red-old-vintage-telephone-on-black-background-and-mirror-desk.jpg?s=612x612&w=0&k=20&c=yyHggrI8-M-TY7FA4Nz9ONhCRd6HxFRPH8qOImermHQ=);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#contact-container {
+    min-height: 400px;
+    backdrop-filter: blur(8px);
+}
+
+.contact-box {
+    margin-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+.contact-box a {
+    color: maroon;
+    text-decoration: none;
+    padding: 0;
+}
+
+.contact-box h2 {
+    color: black;
+}
+/* Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+#admin-container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+/* Header */
+th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table Cells */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Zebra Effect */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+tr:hover {
+  background-color: #828080;
+  transition: 0.3s;
+}
+
+/* Footer */
+#footer {
+    background: #0f172a;
+    color: white;
+    padding: 40px 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-box h3 {
+    margin-bottom: 10px;
+}
+
+.footer-box p,
+.footer-box li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.footer-box a:hover {
+    text-decoration: underline;
+    color: #22c55e;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #334155;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+
+/*  MOBILE  responsive */
+@media (max-width: 768px) {
+
+    /* HAMBURGER BUTTON */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    #nav-menu li {
+        display: block;
+        padding: 15px 0;
+        border-top: 1px solid #444;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+}
+
+    /* IMAGE SECTION */
+    #img-WS {
+        height: 200px;
+        background-position: center;
+    }
+
+    /* SOS SECTION */
+    #sos-page {
+        padding: 30px 15px;
+    }
+
+    #sos-page h2 {
+        font-size: 1.5rem;
+    }
+
+    #sos-page p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* ALERT CARD */
+    .alert-card {
+        width: 90%;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    /* CONTACT SECTION */
+    #contact {
+        text-align: center;
+    }
+
+    .contact-box {
+        margin-left: 0;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    /* PROFILE PAGE */
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .profile-box {
+        width: 100%;
+    }
+
+    .field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .field input {
+        width: 100%;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    /* FORMS */
+    #login-container {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    #loginForm, #registerForm {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
